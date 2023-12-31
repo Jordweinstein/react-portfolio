@@ -24,7 +24,9 @@ export default function Projects() {
 
                 <div className="container2">
                     <h2>Personal Website</h2>
-                    <img className = "projImg" src={WebImage} alt = "Website" />
+                    <a href="https://github.com/Jordweinstein/react-portfolio.git">
+                        <img className = "projImg" src={WebImage} alt = "Website" />
+                    </a>
                     <h3>Website Created with React.js</h3>
                     <p>
                         This website was created using React.js, incorporating elements of CSS, HTML, and JSX.

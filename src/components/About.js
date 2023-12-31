@@ -14,7 +14,10 @@ export default function About() {
                     </h4>
                     <p>
                         I am passionate about leveraging technology to make a difference and aspire to apply my skills in problem-solving, teamwork, 
-                        and creativity to create great products. 
+                        and creativity to create great products and leave an impact on the industry. Specifically, I am an advocate for 
+                        diversity in technology -- as a woman pursuing a career in a male-dominated field, I am constantly seeking ways to encourage
+                        diversity, whether as the DEI chair for Kappa Theta Pi (professional technology fraternity) or as the community outreach
+                        coordinator for Girls Who Code @ UNC.  
                     </p>
                     <p>
                         Some fun facts about me are that I am from Manhattan, 
