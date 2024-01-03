@@ -11,28 +11,26 @@ export default function Contact() {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
-        if (!name || !email || !message){
-            setFormError('Please fill in all the fields correctly')
-            return
+
+        if (!name || !email || !message) {
+            setFormError('Please fill in all the fields correctly');
+            return;
         }
 
         const {data, error} = await supabase
-            .from('public.contact_info')
-            .insert ([{name, email, message}])
-            .select()
-        if (error){
-            console.log(error)
-            setFormError('Please fill in all the fields correctly')
-        }
-        if (data){
-            console.log(data)
-            setFormError(null)
-        }
-
-    }
-
-    console.log(supabase)
+            .from('contact_info')
+            .insert([{ name, email, message }])
+            .select();
+    if (error){
+        console.log(error);
+        setFormError('unexpected error');
+    } if (data)
+        console.log(data);
+        setFormError('Message sent.');
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
 
     return (
         <>
