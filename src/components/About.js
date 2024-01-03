@@ -8,10 +8,10 @@ export default function About() {
             <div className= 'container'>
                 <img src = {headshot} alt = "Headshot" className="aboutImg"/>    
                 <div className = 'container2'>
-                    <h4>
+                    <h3>
                         Hi! I am a sophomore at UNC Chapel Hill double majoring
                         in Computer Science and Mathematics with a minor in Data Science.
-                    </h4>
+                    </h3>
                     <p>
                         I am passionate about leveraging technology to make a difference and aspire to apply my skills in problem-solving, teamwork, 
                         and creativity to create great products and leave an impact on the industry. Specifically, I am an advocate for 

@@ -10,7 +10,7 @@
 
 body {
   font-family: var(--font-roboto);
-  background-image: linear-gradient(cornflowerblue, #95aedd);
+  background-image: linear-gradient(rgb(155, 187, 251), #abc4f2);
   text-align: center;
   text-decoration: none;
 }
@@ -39,16 +39,17 @@ h1 {
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #efefef;
-  font-style: italic;
   padding: 20px;
 }
 
 h3 {
   font-size: 1.7rem;
+  font-weight: 300;
   color: white;
   padding: 10px;
+  font-family: 'Roboto Slab', 'serif';
 }
 
 h4 {
@@ -59,6 +60,7 @@ h4 {
 
 p {
   font-size: 1.3rem;
+  font-family: 'Roboto Slab', 'serif';
   color:aliceblue;
   width: fit-content;
   padding: 10px;
@@ -104,12 +106,12 @@ img {
 }
 
 #skills {
-  background-color:cornflowerblue;
+  background-color:rgb(132, 169, 239);
 }
 
 #contact {
   background-color: #29335c;
-  display: box;
+  display: flex;
   box-shadow: 1px 1px 5px 2px white;
   
 }
@@ -130,16 +132,29 @@ button {
   margin:5px;
 }
 
-.skillImg {
+.skillImg, 
+.projImg {
   max-width: 200px;
   max-height: 100px;
   width: auto;
   height: auto;
 }
 
-.projImg{
-  max-width: 200px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
+@media (max-width: 768px) {
+  .container,
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutImg {
+    max-width:300px;
+    max-height: 300px;
+  }
+  .skillImg,
+  .projImg {
+    max-width: 300px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+  }
 }

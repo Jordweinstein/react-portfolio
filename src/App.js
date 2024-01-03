@@ -14,6 +14,7 @@ const App = () => {
         <Skills />
         <Projects />
         <Contact />
+        <p>Created by Jordan Weinstein (2024) using React</p>
         </>
     );
 }
