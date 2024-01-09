@@ -59,7 +59,7 @@ h4 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-family: 'Roboto Slab', 'serif';
   color:aliceblue;
   width: fit-content;
@@ -101,7 +101,7 @@ img {
 }
 
 .aboutImg {
-  max-width:25%;
+  max-width:27%;
   padding:10px;
 }
 

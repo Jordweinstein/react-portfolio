@@ -30,7 +30,7 @@ export default function Projects() {
                     <h3>Website Created with React.js</h3>
                     <p>
                         This website was created using React.js, incorporating elements of CSS, HTML, and JSX. 
-                        My favorite features are the responsive navbar, and site (adjusts to screen size using
+                        My favorite features are the responsive navbar and site (adjusts to screen size using
                         media queries), as well as the implementation of a backend using supabase to keep track
                         of contact inquiries. Click on the image above to view the github repository.
                     </p>
