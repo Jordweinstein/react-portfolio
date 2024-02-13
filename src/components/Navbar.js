@@ -50,6 +50,16 @@ export default function Navbar() {
             </Link>
             <Link
               activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Experience
+            </Link>
+            <Link
+              activeClass="active"
               to="contact"
               spy={true}
               smooth={true}

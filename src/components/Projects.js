@@ -1,11 +1,10 @@
 import DyslexiQuiz from "./images/dyslexiquiz.png"
 import WebImage from "./images/webImage.jpg";
-import CSSG from "./images/cssg.png";
 
 export default function Projects() {
     return (
         <div id="projects">
-            <h2>Projects and Experiences</h2>
+            <h2>Projects</h2>
             <div className="container">
 
                 <div className="container2">
@@ -34,17 +33,6 @@ export default function Projects() {
                         media queries), as well as the implementation of a backend using supabase to keep track
                         of contact inquiries. Click on the image above to view the github repository.
                     </p>
-                </div>
-                <div className = "container2">
-                    <h2>CS+Social Good</h2>
-                    <img className="projImg" src={CSSG} alt="CSSG" />
-                    <h3>Education Team Member</h3>
-                    <p>
-                        Accepted into the organization's education team, engaging in a rigorous curriculum of
-                        full-stack development. Technologies and languages taught include HTML/CSS, Javascript, 
-                        Next.js, and Supabase.
-                    </p>
-
                 </div>
 
             </div>

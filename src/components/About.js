@@ -10,7 +10,7 @@ export default function About() {
                 <div className = 'container2'>
                     <h3>
                         Hi! I am a sophomore at UNC Chapel Hill double majoring
-                        in Computer Science and Mathematics with a minor in Data Science.
+                        in Computer Science and Mathematics with a minor in Neuroscience.
                     </h3>
                     <p>
                         I am passionate about leveraging technology to make a difference and aspire to apply my skills in problem-solving, teamwork, 
