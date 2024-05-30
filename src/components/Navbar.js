@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import './styles/Navbar.css'; 
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import './styles/Navbar.css';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,47 +19,11 @@ export default function Navbar() {
             &#9776;
           </div>
           <div className={`nav-links ${showMenu ? 'mobile' : ''}`}>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
+            <RouterLink to="/about">
               About
-            </Link>
-            <Link
-              activeClass="active"
-              to="skills"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Skills
-            </Link>
-            <Link
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Projects
-            </Link>
-            <Link
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Experience
-            </Link>
-            <Link
+            </RouterLink>
+            <RouterLink to="/experience">Experience</RouterLink>
+            <ScrollLink
               activeClass="active"
               to="contact"
               spy={true}
@@ -67,10 +32,11 @@ export default function Navbar() {
               duration={500}
             >
               Contact
-            </Link>
+            </ScrollLink>
           </div>
         </nav>
       </header>
     </>
   );
 }
+

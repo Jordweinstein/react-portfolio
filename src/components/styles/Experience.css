@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 280px; 
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.content, .hoverContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.experienceContainer img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.navyText {
+    color: #050d41;
+    font-family: 'Lexend', sans-serif; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experienceContainer {
+        width: 90%;
+    }
+}

@@ -1,22 +1,22 @@
 import React from "react"
 import Navbar from "./components/Navbar"
 import About from "./components/About"
-import Skills from "./components/Skills"
-import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Experience from "./components/Experience"
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import "./App.css"
 const App = () => {
     return (
         <>
-        <Navbar/>
-        <About/>
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
-    
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/about" element={<About />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
         <p>Created by Jordan Weinstein (2024) using React</p>
         </>
     );

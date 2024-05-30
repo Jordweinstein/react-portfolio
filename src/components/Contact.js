@@ -32,22 +32,12 @@ export default function Contact() {
         setMessage('');
     };
 
-    // const handleDownload = () => { 
-    //     const fileContent = { Resume }; 
-    //     const blob = new Blob([fileContent], { type: 'text/plain;charset=utf-8' }); 
-    //     saveAs(blob, 'download.txt'); 
-    // };
-
-    // const DownloadButton = () => { 
-    //     return ( <button onClick={handleDownload}> Download File </button> ); 
-    // };
-
     return (
         <>
         <div className = "container" id = "contact">
             <div className="container2">
                     <h2>Contact Me</h2>
-                    <h4>jweins@unc.edu</h4>
+                    <h3>jweins@unc.edu</h3>
                     <a className = "btn" href="Resume.pdf" download = "Resume.pdf">Download Resume</a>
             </div>
             <div className = "container2">
