@@ -31,6 +31,11 @@
     padding: 15px;
     width: 500px;
     height: 320px;
+    transition: transform 0.3s ease;
+}
+
+.projectContainer:hover{
+    transform: scale(1.05);
 }
 
 .skillContainer {
@@ -39,6 +44,11 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skillContainer:hover {
+    transform: scale(1.05);
 }
 
 .titleContainer {

@@ -10,7 +10,7 @@ export default function Skills() {
     return (
         <>
         <div id="skills">
-            <h2>Skills and Languages</h2>
+            <h2>SKILLS AND LANGUAGES</h2>
             <div className="container">
                 <div className = "skillContainer">
                     <img className="skillImg" src = {java} alt = "java"/>
