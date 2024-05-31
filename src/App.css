@@ -34,22 +34,24 @@ body {
 h1 {
   margin: 0;
   padding: 21px;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 50px;
-
+  color: white;
+  font-weight: 400;
 }
 
 h2 {
   font-family: "Poppins", sans-serif;;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: black;
   padding: 20px;
+  text-align: start;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   color: black;
   padding: 10px;
 }
@@ -113,10 +115,3 @@ button {
   margin-top: auto;
 }
 
-.skillImg, 
-.projImg {
-  max-width: 200px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
-}

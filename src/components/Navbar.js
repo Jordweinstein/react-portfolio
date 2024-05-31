@@ -19,7 +19,7 @@ export default function Navbar() {
             &#9776;
           </div>
           <div className={`nav-links ${showMenu ? 'mobile' : ''}`}>
-            <RouterLink to="/about">
+            <RouterLink to="/">
               About
             </RouterLink>
             <RouterLink to="/experience">Experience</RouterLink>

@@ -1,25 +1,26 @@
-import React from "react"
-import Navbar from "./components/Navbar"
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Experience from "./components/Experience"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 
-import "./App.css"
+import "./App.css";
+
 const App = () => {
     return (
-        <>
-        <Router>
+        <Router basename="/react-portfolio">
             <Navbar />
             <Routes>
-                <Route path="/about" element={<About />} />
+                <Route path="/" element={<About />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
+            <footer>
+                <p>Created by Jordan Weinstein (2024) using React</p>
+            </footer>
         </Router>
-        <p>Created by Jordan Weinstein (2024) using React</p>
-        </>
     );
-}
+};
 
 export default App;

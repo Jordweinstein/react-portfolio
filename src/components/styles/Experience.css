@@ -1,11 +1,11 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content:space-evenly;
+    padding-bottom: 40px;
 }
 
-.experienceContainer {
+.container2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +14,38 @@
     padding: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    margin: 15px;
+}
+
+.experienceContainer {
     width: 280px; 
     height: 400px;
     position: relative;
-    overflow: hidden;
-    
+}
+
+.expTitle {
+    padding-left: 50px
+}
+
+.projectContainer {
+    padding: 15px;
+    width: 500px;
+    height: 320px;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content, .hoverContent {
@@ -32,7 +59,7 @@
 .experienceContainer img {
     width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 20px;
 }
 
 .navyText {
@@ -41,6 +68,27 @@
     text-align: center;
 }
 
+.skillImg {
+  max-width: 200px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  border: grey 1px solid;
+}
+
+.projImg {
+    max-width: 17500px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+#skills {
+    background-color: rgb(225, 234, 255);
+    border-top: navy 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

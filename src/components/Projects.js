@@ -6,12 +6,13 @@ export default function Projects() {
         <div id="projects">
             <h2>Projects</h2>
             <div className="container">
-
-                <div className="container2">
-                    <h2>DyslexiQuiz</h2>
-                    <a href="https://devpost.com/software/dyslexiquiz">
+                <div className="projectContainer container2">
+                    <div className="titleContainer">
+                        <h2>DyslexiQuiz</h2>
+                        <a href="https://devpost.com/software/dyslexiquiz">
                         <img className = "projImg" src={DyslexiQuiz} alt="DyslexiQuiz"/>
                     </a>
+                    </div>
                     <h3>HackNC 2023 Best UI/UX Hack</h3>
                     <p>
                         DyslexiQuiz is an IOS application built using Swift aimed towards improving
@@ -21,11 +22,13 @@ export default function Projects() {
                     </p>
                 </div>
 
-                <div className="container2">
-                    <h2>Personal Website</h2>
-                    <a href="https://github.com/Jordweinstein/react-portfolio.git">
-                        <img className = "projImg" src={WebImage} alt = "Website" />
-                    </a>
+                <div className="projectContainer container2">
+                    <div className = "titleContainer">
+                        <h2>Personal Website</h2>
+                        <a href="https://github.com/Jordweinstein/react-portfolio.git">
+                            <img className = "projImg" src={WebImage} alt = "Website" />
+                        </a>
+                    </div>
                     <h3>Website Created with React.js</h3>
                     <p>
                         This website was created using React.js, incorporating elements of CSS, HTML, and JSX. 

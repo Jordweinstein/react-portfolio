@@ -22,15 +22,6 @@ header {
   color: var(--textColor);
 }
 
-h1 {
-  margin: 0;
-  padding: 21px;
-  font-size: 40px;
-  line-height: 50px;
-  color: white;
-  font-weight: 400;
-}
-
 .navbar {
   display: flex;
   align-items: center;

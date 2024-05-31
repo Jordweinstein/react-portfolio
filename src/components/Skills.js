@@ -12,27 +12,27 @@ export default function Skills() {
         <div id="skills">
             <h2>Skills and Languages</h2>
             <div className="container">
-                <div className = "container2">
+                <div className = "skillContainer">
                     <img className="skillImg" src = {java} alt = "java"/>
                     <h4>Java</h4>
                 </div>
-                <div className = "container2">
+                <div className = "skillContainer">
                     <img className="skillImg" src = {html} alt = "html"/>
                     <h4>HTML</h4>
                 </div>
-                <div className = "container2">
+                <div className = "skillContainer">
                     <img className="skillImg" src = {css} alt = "css"/>
                     <h4>CSS</h4>
                 </div>
-                <div className = "container2">
+                <div className = "skillContainer">
                     <img className="skillImg" src= {react} alt = "react"/>
                     <h4>React</h4>
                 </div>
-                <div className = "container2">
+                <div className = "skillContainer">
                     <img className="skillImg" src = {swift} alt = "swift"/>
                     <h4>Swift</h4>
                 </div>
-                <div className = "container2">
+                <div className = "skillContainer">
                     <img className="skillImg" src = {javascript} alt = "javascript"/>
                     <h4>Javascript</h4>
                 </div>
