@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import supabase from '../config/supabaseClient.js'
 
+import './styles/Contact.css'
+
 export default function Contact() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -34,13 +36,13 @@ export default function Contact() {
 
     return (
         <>
-        <div className = "container" id = "contact">
-            <div className="container2">
+        <div className = "contact-container" id = "contact">
+            <div className="contact-container2">
                     <h2>Contact Me</h2>
                     <h3>jweins@unc.edu</h3>
                     <a className = "btn" href="Resume.pdf" download = "Resume.pdf">Download Resume</a>
             </div>
-            <div className = "container2">
+            <div className>
                 <form onSubmit={(e)=>handleSubmit(e)}>
                     <input 
                         onChange={(e)=>setName(e.target.value) }

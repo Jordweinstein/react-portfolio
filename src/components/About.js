@@ -27,7 +27,7 @@ export default function About() {
                         Specifically, I am 
                         an advocate for diversity in technology -- as a woman pursuing a career in a male-dominated field, I am constantly seeking ways 
                         to encourage diversity, whether as the director of DEI for Kappa Theta Pi (professional technology fraternity) or as a Teaching 
-                        Assistant for Girls Who Code @ UNC. Take a look at <a href="./experience">my experience</a> for more!!
+                        Assistant for Girls Who Code @ UNC. Take a look at <a href="./Experience">my experience</a> for more!!
                     </p>
                     <p>
                         <b>Fun facts:</b> I once held the highest Subway Surfers score in the country, I can type 143 words per minute, and I play the guitar.
@@ -36,9 +36,9 @@ export default function About() {
             </div>
             
             <div className = "container" id="travel" style={{color: 'white'}}>
-                <div className = "container2">
+                <div className = "travel-container">
                     <h2>My Travels</h2>
-                    <h3>One of my favorite hobbies is traveling around the world. Throughout my different journeys,
+                    <h3>One of my favorite hobbies is traveling around the world seeing new sites, concerts, and cultures. Throughout my different journeys,
                         I have picked up some skills in photography. My excitement for exploring new places, immersing
                         myself in new cultures, and documenting everything along the way parallels to my passion for 
                         constantly embracing new knowledge and inspiring others along the way!! Take a look at some
