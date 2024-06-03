@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.a74d7928.css",
-    "main.js": "/react-portfolio/static/js/main.df820e69.js",
+    "main.css": "/react-portfolio/static/css/main.122147d7.css",
+    "main.js": "/react-portfolio/static/js/main.c3805dcb.js",
     "static/js/289.ff03be3e.chunk.js": "/react-portfolio/static/js/289.ff03be3e.chunk.js",
+    "static/media/5.jpeg": "/react-portfolio/static/media/5.c0287bc8ef532a70fbd8.jpeg",
+    "static/media/2.jpeg": "/react-portfolio/static/media/2.8410fc22a1eed8b5a62b.jpeg",
+    "static/media/1.jpeg": "/react-portfolio/static/media/1.f991d09e149e3b6a666c.jpeg",
+    "static/media/3.jpeg": "/react-portfolio/static/media/3.92e2de9148d98eec050e.jpeg",
+    "static/media/4.jpeg": "/react-portfolio/static/media/4.68c2b1c041052f2d1947.jpeg",
     "static/media/headshot.png": "/react-portfolio/static/media/headshot.4c735b57ab8611c4a6b0.png",
     "static/media/dyslexiquiz.png": "/react-portfolio/static/media/dyslexiquiz.d9d24598ff82f9683d36.png",
     "static/media/swift.png": "/react-portfolio/static/media/swift.d2d220266ee30be0da39.png",
@@ -13,12 +18,12 @@
     "static/media/html.png": "/react-portfolio/static/media/html.45e28c5ddddc685deb99.png",
     "static/media/javascript.png": "/react-portfolio/static/media/javascript.b9808e9d46480c14bc1d.png",
     "index.html": "/react-portfolio/index.html",
-    "main.a74d7928.css.map": "/react-portfolio/static/css/main.a74d7928.css.map",
-    "main.df820e69.js.map": "/react-portfolio/static/js/main.df820e69.js.map",
+    "main.122147d7.css.map": "/react-portfolio/static/css/main.122147d7.css.map",
+    "main.c3805dcb.js.map": "/react-portfolio/static/js/main.c3805dcb.js.map",
     "289.ff03be3e.chunk.js.map": "/react-portfolio/static/js/289.ff03be3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a74d7928.css",
-    "static/js/main.df820e69.js"
+    "static/css/main.122147d7.css",
+    "static/js/main.c3805dcb.js"
   ]
 }
