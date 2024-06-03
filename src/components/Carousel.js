@@ -4,7 +4,10 @@ import Img1 from './images/1.jpeg';
 import Img2 from './images/2.jpeg';
 import Img3 from './images/3.jpeg';
 import Img4 from './images/4.jpeg';
+import Img6 from './images/6.jpeg';
 import Img5 from './images/5.jpeg';
+import Img7 from './images/7.jpeg';
+import Img8 from './images/8.jpeg';
 
 export default function Carousel() {
     const images = [
@@ -12,7 +15,10 @@ export default function Carousel() {
         Img2,
         Img3,
         Img4,
-        Img5
+        Img5,
+        Img6,
+        Img7,
+        Img8
     ];
     const [activeIndex, setActiveIndex] = useState(0);
     const nextSlide = () => {

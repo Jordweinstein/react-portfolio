@@ -40,7 +40,7 @@ export default function Contact() {
             <div className="contact-container2">
                     <h2>Contact Me</h2>
                     <h3>jweins@unc.edu</h3>
-                    <a className = "btn" href="Resume.pdf" download = "Resume.pdf">Download Resume</a>
+                    <a className = "btn" href="/Resume.pdf" download = "Resume.pdf">Download Resume</a>
             </div>
             <div className>
                 <form onSubmit={(e)=>handleSubmit(e)}>

@@ -1,6 +1,6 @@
 #contact {
     height:300px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 form input, textarea {
@@ -18,7 +18,7 @@ form input, textarea {
 .contact-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 30px;
 }
 
