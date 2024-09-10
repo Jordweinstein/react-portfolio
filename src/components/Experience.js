@@ -1,11 +1,13 @@
 import CSSG from "./images/cssg.png"
 import Accenture from "./images/accenture.png"
+import Fidelity from "./images/fidelity.png"
 import GWC from "./images/gwc.png"
 import KTP from "./images/ktp.png"
 import Skills from "./Skills.js"
 import DyslexiQuiz from "./images/dyslexiquiz.png"
-import WebImage from "./images/webImage.jpg";
-import './styles/Experience.css';
+import WebImage from "./images/webImage.jpg"
+import CampusCloset from "./images/campuscloset.png"
+import './styles/Experience.css'
 import { useState } from "react"
 
 const experiences = [
@@ -64,14 +66,40 @@ const experiences = [
                         </p>
                     </div>, 
     },
+    { id: 5, 
+        content: <div className = "content container2 experienceContainer">
+                    <h2 className="navyText">Fidelity Investments</h2>
+                    <img src={Fidelity} alt="Fidelity" />
+                    <h3>Software Engineer Intern</h3>
+                </div>, 
+        hoverContent: <div className = "hoverContent container2 experienceContainer">
+                        <p className = "navyText">
+                        Worked on a team to develop and implement a Chrome extension that improved visitor engagement tracking efficiency for 
+                        Fidelity associates on all company-owned web pages with millions of users. Utilizing JavaScript and Chrome 
+                        WebRequest APIs, we retrieved and parse network calls sent to digital marketing vendors and displayed it on a user friendly 
+                        interface built with HTML/CSS and Bootstrap.
+                        </p>
+                    </div>, 
+    },
 ]
 
 export default function Experience() {
+    // Splitting the experiences array into two groups
+    const firstThreeExperiences = experiences.slice(0, 3);
+    const lastTwoExperiences = experiences.slice(3);
+
     return (
         <>
         <h2 className="expTitle">EXPERIENCE AND LEADERSHIP</h2>
+        
         <div className="container">
-            {experiences.map((exp) => (
+            {firstThreeExperiences.map((exp) => (
+                <ExperienceContainer key={exp.id} experience={exp} />
+            ))}
+        </div>
+        
+        <div className="container">
+            {lastTwoExperiences.map((exp) => (
                 <ExperienceContainer key={exp.id} experience={exp} />
             ))}
         </div>
@@ -108,6 +136,22 @@ export default function Experience() {
                         My favorite features are the responsive navbar and site (adjusts to screen size using
                         media queries), as well as the implementation of a backend using supabase to keep track
                         of contact inquiries. Click on the image above to view the github repository.
+                    </p>
+                </div>
+
+                <div className="projectContainer container2">
+                    <div className = "titleContainer">
+                        <h2>Campus Closet</h2>
+                        <a href="https://github.com/Jordweinstein/campus-closet">
+                            <img className = "projImg" src={CampusCloset} alt = "Campus Closet" />
+                        </a>
+                    </div>
+                    <h3>iOS Application (React Native/Expo)</h3>
+                    <p>
+                    Created a full-stack iOS application to encourage sustainability in college through a clothing rental program.
+                    Implemented Firebase Authentication/Cloud Storage to manage user interactions/data and deployed iOS app to TestFlight, 
+                    facilitating beta testing of 50+ users to gather feedback and optimize user experience/functionality. Click on the logo
+                    to view the Github repository!
                     </p>
                 </div>
 
