@@ -84,28 +84,20 @@ const experiences = [
 ]
 
 export default function Experience() {
-    // Splitting the experiences array into two groups
-    const firstThreeExperiences = experiences.slice(0, 3);
-    const lastTwoExperiences = experiences.slice(3);
 
     return (
         <>
         <h2 className="expTitle">EXPERIENCE AND LEADERSHIP</h2>
         
-        <div className="container">
-            {firstThreeExperiences.map((exp) => (
-                <ExperienceContainer key={exp.id} experience={exp} />
-            ))}
-        </div>
-        
-        <div className="container">
-            {lastTwoExperiences.map((exp) => (
+        <div className="scrollContainer">
+            {experiences.map((exp) => (
                 <ExperienceContainer key={exp.id} experience={exp} />
             ))}
         </div>
         
         <div id="projects">
             <h2>PROJECTS</h2>
+            <h5>Click on images to view repositories!</h5>
             <div className="container">
                 <div className="projectContainer container2">
                     <div className="titleContainer">
@@ -135,7 +127,7 @@ export default function Experience() {
                         This website was created using React.js, incorporating elements of CSS, HTML, and JSX. 
                         My favorite features are the responsive navbar and site (adjusts to screen size using
                         media queries), as well as the implementation of a backend using supabase to keep track
-                        of contact inquiries. Click on the image above to view the github repository.
+                        of contact inquiries.
                     </p>
                 </div>
 
@@ -146,12 +138,11 @@ export default function Experience() {
                             <img className = "projImg" src={CampusCloset} alt = "Campus Closet" />
                         </a>
                     </div>
-                    <h3>iOS Application (React Native/Expo)</h3>
+                    <h3>iOS App (React Native/Expo)</h3>
                     <p>
                     Created a full-stack iOS application to encourage sustainability in college through a clothing rental program.
                     Implemented Firebase Authentication/Cloud Storage to manage user interactions/data and deployed iOS app to TestFlight, 
-                    facilitating beta testing of 50+ users to gather feedback and optimize user experience/functionality. Click on the logo
-                    to view the Github repository!
+                    facilitating beta testing of 50+ users.
                     </p>
                 </div>
 
