@@ -16,6 +16,7 @@ export default function Contact() {
 
         if (!name || !email || !message) {
             setFormError('Please fill in all the fields correctly');
+            alert(formError);
             return;
         }
 
@@ -34,13 +35,22 @@ export default function Contact() {
         setMessage('');
     };
 
+    const handleDownload =  () => {
+        const element = document.createElement("a");
+        element.href = '/Resume.pdf';
+        element.download = "Jordan-Weinstein-Resume.pdf";
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+
     return (
         <>
         <div className = "contact-container" id = "contact">
             <div className="contact-container2">
-                    <h2>Contact Me</h2>
-                    <h3>jweins@unc.edu</h3>
-                    <a className = "btn" href="/Resume.pdf" download = "Resume.pdf">Download Resume</a>
+                    <h3>Contact Me</h3>
+                    <h5>jweins@unc.edu</h5>
+                    <button className = "btn" onClick={handleDownload} value = "download">Download Resume </button>
             </div>
             <div className>
                 <form onSubmit={(e)=>handleSubmit(e)}>
@@ -66,11 +76,10 @@ export default function Contact() {
                         value={message} 
                         name="message" 
                         cols="30" 
-                        rows="10" 
+                        rows="4" 
                         placeholder='Enter message'
                     />
                     <button type='submit'>send</button>
-                    {formError}
                 </form>
             </div>
         </div>

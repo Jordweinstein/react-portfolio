@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import LinkedIn from './images/linkedin.png';
+import Github from './images/github.jpg';
 import './styles/Navbar.css';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const location = useLocation();  // Get current location object
+  const location = useLocation();  
   const toggleMenu = () => setShowMenu(!showMenu);
 
-  // Determine if we are on the "About" page
   const onAboutPage = location.pathname === '/';
 
   return (
     <header>
-      <h1>Jordan Weinstein</h1>
+      <div className="leftHeader">
+        <h1>Jordan Weinstein</h1>
+        <a href="https://www.linkedin.com/in/jordan-weinstein-aa50661ab/"><img src={LinkedIn} alt="LinkedIn Logo" className='navImg'/></a>
+        <a href="https://github.com/Jordweinstein"><img src={Github} alt="Github Logo" className='navImg'/></a>
+      </div>
+      
       <nav className={`navbar ${showMenu ? 'show-menu' : ''}`}>
         <div className="menu-icon" onClick={toggleMenu}>
           &#9776;
